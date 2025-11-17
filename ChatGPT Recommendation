@@ -1,0 +1,184 @@
+OK、AtCoder × C++ に特化して「読むべきAPI」を**優先度順（習得効果が大きい順）**でまとめるね。
+ 全部読む必要はなくて、上からちょっとずつ読めば実力が伸びる構成にしてある。
+
+🟦 AtCoderで強くなるために読むべき C++ API（決定版）
+
+✔ 優先度 S（最優先） — 競プロで必須
+1. <algorithm>
+AtCoderの8割の問題で使う。
+読むべき項目：
+sort
+
+reverse
+
+min
+
+max
+
+min_element
+
+max_element
+
+lower_bound
+
+upper_bound
+
+binary_search
+
+ポイント：
+ Complexity（計算量） を読む習慣をつけると圧倒的に強くなる。
+
+2. <vector>
+競プロのメイン武器。
+読むべき項目：
+push_back
+
+pop_back
+
+size
+
+empty
+
+clear
+
+reserve
+
+capacity（超重要）
+
+shrink_to_fit
+
+ポイント：
+ reserve() と capacity() を理解できると、
+ メモリと速度の最適化がわかる。
+
+3. <string>
+文字列問題で必須。
+読むべき項目：
+substr
+
+find
+
+push_back
+
+size
+
+operator[]
+
+
+4. <queue>
+BFSなどに必須。
+読むべき項目：
+queue
+
+priority_queue（特に複雑）
+
+push
+
+pop
+
+top
+
+
+✔ 優先度 A — 難しめの問題が解けるようになる
+5. <map> と <unordered_map>
+operator[]
+
+insert
+
+find
+
+count
+
+erase
+
+読みどころ：
+ordered（順序あり）と unordered（高速） の違い
+
+計算量：
+
+map → O(log N)
+
+unordered_map → 平均 O(1)
+
+
+6. <set> と <unordered_set>
+insert
+
+find
+
+erase
+
+lower_bound（setにもある！）
+
+特に set.lower_bound() を理解すると強い。
+
+7. <stack>
+push
+
+pop
+
+top
+
+括弧列問題などで役立つ。
+
+✔ 優先度 B — 上級者を目指す人向け
+8. <deque>
+両端 push/pop が O(1)
+ キュー・スタックを合体させたようなやつ。
+
+
+9. <bitset>
+ビットDPや高速化で使う。
+
+10. <numeric>
+accumulate
+
+iota
+
+gcd（C++17以降は <numeric> に移動）
+
+これだけ知ってると地味に便利。
+
+🟦 これを読む順番
+毎日1つ読むならこれでOK：
+sort
+
+vector
+
+lower_bound
+
+string.substr
+
+queue
+
+priority_queue
+
+map
+
+set
+
+unordered_map
+
+accumulate
+
+
+🟦 APIを読むポイント（上達速度が跳ね上がる）
+「Parameters / Return value / Complexity」だけ読む
+
+Exampleコードは必ず読む
+
+読んだらその日の AtCoder 問題で使ってみる
+
+
+🟦 君専用に「API読書メニュー」作るよ
+C++で今、
+よく使うコンテナ
+
+苦手なテクニック
+
+よく間違える関数
+
+これを教えてくれたら、
+ 1ヶ月でAtCoder茶～緑レベルに到達するAPI学習ロードマップ
+ を作る。
+どうする？
